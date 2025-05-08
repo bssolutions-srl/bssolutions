@@ -14,22 +14,27 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
   });
   
-const translations = {
+  const translations = {
     en: {
-      "site-title": "Business Soft Solutions S.R.L.",
       "nav-about": "About",
       "nav-services": "Services",
       "nav-portfolio": "Portfolio",
       "nav-contact": "Contact",
-      "about-title": "About Me",
-      "about-text": "I'm Rareș, a freelance developer passionate about creating modern, fast websites and apps for clients. I offer reliable and tailored solutions.",
       "services-title": "Services",
       "srv1-title": "Custom Websites",
-      "srv1-text": "Responsive websites built with HTML, CSS, JS or React.",
-      "srv2-title": "Performance Optimization",
-      "srv2-text": "Speed improvements, SEO tuning and UX enhancements.",
-      "srv3-title": "Automations & APIs",
-      "srv3-text": "API integrations or microservices with Node.js or Python.",
+      "srv1-text": "Responsive presentation websites built with HTML, CSS, JS.",
+      "srv2-title": "Logo Design",
+      "srv2-text": "Logos and icons designed for your business or website",
+      "srv3-title": "Automations",
+      "srv3-text": "Designed specifically at your request, guaranteed to get you rid of boring tasks",
+      "srv4-title": "Web & Mobile Apps",
+      "srv4-text": "Develop your own idea with an app for all platforms",
+      "srv5-title": "Data Manipulation",
+      "srv5-text": "Whether we're talking about Excel files or SQL databases, we can help you store your data",
+      "srv6-title": "Other",
+      "srv6-text": "Algorithms, project sections you need help with and... just ask and we might help you",
+      "about-title": "About Me",
+      "about-text": "I'm Rareș, a freelance developer passionate about creating modern, fast websites and apps for clients. I offer reliable and tailored solutions.",
       "portfolio-title": "Previous Projects",
       "proj1-title": "Transport Company Site",
       "proj1-text": "Responsive website with a price estimation form.",
@@ -40,63 +45,77 @@ const translations = {
       "contact-title": "Contact"
     },
     ro: {
-      "site-title": "Business Soft Solutions S.R.L.",
       "nav-about": "Despre",
       "nav-services": "Servicii",
       "nav-portfolio": "Portofoliu",
       "nav-contact": "Contact",
-      "about-title": "Despre mine",
-      "about-text": "Sunt Rareș, un freelancer pasionat de dezvoltare web și soluții personalizate. Ofer servicii rapide și adaptate nevoilor tale.",
-      "services-title": "Servicii oferite",
-      "srv1-title": "Website-uri personalizate",
-      "srv1-text": "Site-uri responsive cu HTML, CSS, JS sau React.",
-      "srv2-title": "Optimizare performanță",
-      "srv2-text": "Reducere timp de încărcare, SEO și UX îmbunătățit.",
-      "srv3-title": "Automatizări & API-uri",
-      "srv3-text": "Integrare API-uri sau microservicii cu Node.js / Python.",
-      "portfolio-title": "Proiecte anterioare",
-      "proj1-title": "Site firmă transport",
-      "proj1-text": "Website cu formular estimare preț.",
-      "proj2-title": "Dashboard clienți",
-      "proj2-text": "Aplicație React conectată la backend Flask.",
-      "proj3-title": "Landing page SaaS",
-      "proj3-text": "Landing performant pentru produs digital.",
+      "services-title": "Servicii",
+      "srv1-title": "Site-uri Personalizate",
+      "srv1-text": "Site-uri de prezentare responsive construite cu HTML, CSS, JS.",
+      "srv2-title": "Design Logo",
+      "srv2-text": "Logouri și pictograme create pentru afacerea sau site-ul tău",
+      "srv3-title": "Automatizări",
+      "srv3-text": "Făcute la cererea ta, garantat te scapă de task-uri plictisitoare",
+      "srv4-title": "Aplicații Web & Mobile",
+      "srv4-text": "Dezvoltă-ți propria idee cu o aplicație pentru toate platformele",
+      "srv5-title": "Manipulare Date",
+      "srv5-text": "Fie că vorbim de fișiere Excel sau baze de date SQL, te ajutăm să-ți gestionezi datele",
+      "srv6-title": "Altele",
+      "srv6-text": "Algoritmi, secțiuni de proiect la care ai nevoie de ajutor... spune-ne și poate te putem ajuta",
+      "about-title": "Despre Mine",
+      "about-text": "Sunt Rareș, un dezvoltator freelancer pasionat de realizarea de site-uri și aplicații moderne și rapide pentru clienți. Ofer soluții fiabile și adaptate.",
+      "portfolio-title": "Proiecte Anterioare",
+      "proj1-title": "Site pentru Firmă de Transport",
+      "proj1-text": "Site responsive cu formular de estimare a prețului.",
+      "proj2-title": "Dashboard Client",
+      "proj2-text": "Aplicație dashboard React conectată la backend Flask.",
+      "proj3-title": "Landing Page SaaS",
+      "proj3-text": "Landing page performant pentru un produs digital.",
       "contact-title": "Contact"
     },
     de: {
-      "site-title": "Business Soft Solutions S.R.L.",
       "nav-about": "Über mich",
       "nav-services": "Dienstleistungen",
-      "nav-portfolio": "Projekte",
+      "nav-portfolio": "Portfolio",
       "nav-contact": "Kontakt",
+      "services-title": "Dienstleistungen",
+      "srv1-title": "Individuelle Websites",
+      "srv1-text": "Responsive Präsentationswebsites mit HTML, CSS, JS.",
+      "srv2-title": "Logo-Design",
+      "srv2-text": "Logos und Icons für dein Unternehmen oder deine Website",
+      "srv3-title": "Automatisierungen",
+      "srv3-text": "Speziell auf Anfrage gestaltet, um dich von langweiligen Aufgaben zu befreien",
+      "srv4-title": "Web- & Mobile-Apps",
+      "srv4-text": "Entwickle deine eigene Idee mit einer App für alle Plattformen",
+      "srv5-title": "Datenverarbeitung",
+      "srv5-text": "Ob Excel-Dateien oder SQL-Datenbanken – wir helfen dir, deine Daten zu verwalten",
+      "srv6-title": "Sonstiges",
+      "srv6-text": "Algorithmen, Projektteile, bei denen du Hilfe brauchst – frag einfach nach!",
       "about-title": "Über mich",
-      "about-text": "Ich bin Rareș, ein Freelancer mit Fokus auf Webentwicklung. Ich biete maßgeschneiderte, schnelle Lösungen für Kunden.",
-      "services-title": "Angebotene Dienstleistungen",
-      "srv1-title": "Individuelle Webseiten",
-      "srv1-text": "Responsive Webseiten mit HTML, CSS, JS oder React.",
-      "srv2-title": "Performance Optimierung",
-      "srv2-text": "Ladezeiten reduzieren, SEO verbessern, UX optimieren.",
-      "srv3-title": "Automatisierungen & APIs",
-      "srv3-text": "API-Integration oder Microservices mit Node.js/Python.",
+      "about-text": "Ich bin Rareș, ein freiberuflicher Entwickler, der sich für moderne und schnelle Websites und Apps begeistert. Ich biete zuverlässige und maßgeschneiderte Lösungen.",
       "portfolio-title": "Frühere Projekte",
-      "proj1-title": "Transportfirma Webseite",
-      "proj1-text": "Responsive Seite mit Preisrechner.",
+      "proj1-title": "Website für Transportunternehmen",
+      "proj1-text": "Responsive Website mit Preisberechnungsformular.",
       "proj2-title": "Kunden-Dashboard",
-      "proj2-text": "React App mit Flask-Backend.",
-      "proj3-title": "SaaS Landingpage",
-      "proj3-text": "Performante Landingpage für ein digitales Produkt.",
+      "proj2-text": "React-Dashboard-App mit Flask-Backend verbunden.",
+      "proj3-title": "SaaS Landing Page",
+      "proj3-text": "Leistungsstarke Landing Page für ein digitales Produkt.",
       "contact-title": "Kontakt"
     }
   };
   
   document.querySelectorAll('.language-switcher img').forEach(img => {
     img.addEventListener('click', () => {
-      const selectedLang = img.getAttribute('data-lang');
-      const keys = translations[selectedLang];
-      for (let key in keys) {
-        const el = document.getElementById(key);
-        if (el) el.textContent = keys[key];
-      }
+      const lang = img.dataset.lang;
+      changeLanguage(lang);
     });
   });
+  
+  function changeLanguage(lang) {
+    const texts = translations[lang];
+    for (const id in texts) {
+      const element = document.getElementById(id);
+      if (element) element.textContent = texts[id];
+    }
+  }
   
