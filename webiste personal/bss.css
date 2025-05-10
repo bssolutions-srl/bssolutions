@@ -137,3 +137,20 @@ body {
   p {
     line-height: 4vh;
   }
+  #despre p {
+    font-size:22px;
+  }
+  #despre {
+    font-family: 'Roboto', sans-serif;
+    line-height:30px;
+    font-weight: 300;
+    font-size: 19px;
+  }
+  .portofoliu {
+    cursor: pointer;
+  }
+  .portofoliu:hover {
+    background-color: #333;
+    color:white;
+    transform: scale(1.05)
+  }
