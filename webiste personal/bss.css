@@ -14,13 +14,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
   
   header {
     position: sticky;
     top:0;
+    z-index: 1000;
     background-color: #222;
     color: white;
     padding: 20px 40px;
@@ -50,7 +51,7 @@ body {
   
   section {
     padding: 20px 20px;
-    max-width: 1000px;
+    max-width: 70%;
     margin: auto;
   }
   
@@ -68,6 +69,7 @@ body {
   }
   
   .card {
+    height:25vh;
     background: white;
     border: 1px solid #ddd;
     padding: 20px;
@@ -116,6 +118,8 @@ body {
   }
 
   .card_title {
+    width:100%;
+    height: 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,6 +129,9 @@ body {
   .card_title h3 {
     margin-right: 0; /* elimină marginile implicite dacă vrei o aliniere mai curată */
     font-size: 126%;
+  }
+  .card_fata p {
+    height: 65%;
   }
   
   .service_icon {
@@ -146,11 +153,82 @@ body {
     font-weight: 300;
     font-size: 19px;
   }
-  .portofoliu {
-    cursor: pointer;
-  }
-  .portofoliu:hover {
-    background-color: #333;
-    color:white;
-    transform: scale(1.05)
-  }
+.card_portofoliu {
+  height: 35vh;
+  cursor: pointer;
+  padding:0
+}
+.portofoliu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+} 
+.card_portofoliu:hover .portofoliu {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card_fata,
+.card_spate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.card_fata {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content:space-evenly;
+  width:85%;
+  background: white;
+}
+.card_spate {
+  color: #333;
+  transform: rotateY(180deg);
+  position: relative; /* Required for overlay positioning */
+  overflow: hidden;   /* Ensures overlay doesn't leak out */
+}
+
+#excome_card_spate {
+  background: url("./Excome/excome_main_page.png") center/cover no-repeat;
+}
+
+#atestate_card_spate {
+  background: url("./atestate/locatii.png") center/cover no-repeat;
+}
+
+#logos_card_spate {
+  background: url("./logos/fundal_logo.png") center/cover no-repeat;
+}
+
+#broscuta_card_spate {
+  background: url("./broscuta/broscuta_matematiciana_main.png") center/cover no-repeat;
+}
+
+.card_spate::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand for top, right, bottom, left: 0 */
+  backdrop-filter: blur(2px); /* Blur effect */
+  background: rgba(255, 255, 255, 0.4); /* Whitish overlay */
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.2); /* Shadowy effect */
+  z-index: 1;
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+/* Optional: Ensure your actual content stays above the overlay */
+.card_spate > * {
+  position: relative;
+  z-index: 2;
+}

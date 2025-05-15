@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bss - Excome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="excome.css" />
+</head>
+<body>
+    <header>
+        <h1 id="site-title" onclick="window.location.href='./bss.html'">Business Soft Solutions S.R.L.</h1>
+          <div class="language-switcher">
+            <img src="flags/en.png" alt="English" data-lang="en" />
+            <img src="flags/ro.png" alt="Română" data-lang="ro" />
+            <img src="flags/de.png" alt="Deutsch" data-lang="de" />
+          </div>
+      </header>
+    <section>
+      <div class="text" data-aos="fade-right">
+        <h2 id="title-track">Gestioneaza cheltuielile</h2>
+        <p id="desc-track">Adaugă cu ușurință veniturile și cheltuielile tale, iar aplicația le va organiza automat în funcție de lună și perioade de timp. Vizualizează totul într-o interfață clară, modernă și intuitivă, concepută pentru a te ajuta să-ți gestionezi bugetul fără efort.</p>
+      </div>
+      <div class="image" data-aos="zoom-in-left">
+        <img src="./Excome/excome_main_page.png" alt="Pagina Principală">
+      </div>
+    </section>
+
+    <section>
+      <div class="text" data-aos="fade-left">
+        <h2 id="title-receipt">Adaugă Bonul în Câteva Secunde</h2>
+        <p id="desc-receipt">Fă o poză bonului sau alege una din galerie, iar aplicația va recunoaște automat informațiile importante: ce ai cumparat, cantitate și pret. Toate datele sunt adăugate instant în lista ta de cheltuieli, fără să fie nevoie să completezi manual.</p>
+      </div>
+      <div class="image" data-aos="zoom-in-right">
+        <img src="./Excome/excome_bon_adauga.png" alt="Adaugă Bon">
+      </div>
+    </section>
+
+    <section>
+      <div class="text" data-aos="fade-up">
+        <h2 id="title-reports">Statistici Inteligente și Rapoarte Vizuale</h2>
+        <p id="desc-reports">Aplică filtre, analizează tendințele și descoperă unde se duc banii tăi. Excome clasifică automat fiecare tranzacție în categorii relevante, oferindu-ți grafice clare și rapoarte intuitive, concepute pentru decizii financiare informate.</p>
+      </div>
+      <div class="image" data-aos="zoom-in-up">
+        <img src="./Excome/excome_bar_chart.png" alt="Statistici">
+      </div>
+    </section>
+<!-- AOS JS -->
+<script src="excome-lang.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,     // viteza animatiei in ms
+    once: true,        // animatia se intampla o singura data
+  });
+</script>
+</body>
+</html>

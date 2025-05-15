@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bss - Mathematician Frog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="excome.css" />
+</head>
+<body>
+    <header>
+        <h1 id="site-title" onclick="window.location.href='./bss.html'">Business Soft Solutions S.R.L.</h1>
+          <div class="language-switcher">
+            <img src="flags/en.png" alt="English" data-lang="en" />
+            <img src="flags/ro.png" alt="Română" data-lang="ro" />
+            <img src="flags/de.png" alt="Deutsch" data-lang="de" />
+          </div>
+      </header>
+    <section style="height: 60vh;">
+      <div class="text" data-aos="zoom-in">
+        <h2 id="title-broscuta">Broscuta Matematiciana</h2>
+        <p id="desc-broscuta">Alege un nivel de dificultate – ușor, mediu sau greu – și pornește din mijlocul matricei cu broșcuța ta isteață. Sarcina ta? Să formezi numărul corect sărind din cifră în semn și înapoi. Fiecare pas contează! <a href=https://gabip19.github.io/broscuta-matematiciana id="link_brosuta">Joaca si tu!</a></p>
+      </div>
+      <div class="image" data-aos="fade-left">
+        <img src="./broscuta/usor_cu_instructiuni.png" alt="Pagina Principală">
+      </div>
+    </section>
+
+    <section style="height: 70vh;">
+      <div class="text" data-aos="fade-left">
+        <h2 id="title-jucat">Gameplay Highlights</h2>
+        <ul class="feature-list">
+            <li id="desc-jucat-1"><strong>Matrice dinamică:</strong> Generată automat, diferită de fiecare dată.</li>
+            <li id="desc-jucat-2"><strong>Traseu garantat:</strong> Există mereu o soluție corectă – o poți găsi?</li>
+            <li id="desc-jucat-3"><strong>Scor inteligent:</strong> Cu cât nivelul e mai greu, cu atât câștigi mai multe puncte.</li>
+            <li id="desc-jucat-4"><strong>Reîncercări?</strong> Sigur, dar cu penalizări la scor.</li>
+        </ul>
+      </div>
+      <div class="image" data-aos="fade-down-right">
+        <img src="./broscuta/broscuta_matematiciana_main.png" alt="Adaugă Bon">
+      </div>
+    </section>
+
+    <section style="height: 55vh;">
+      <div class="text" data-aos="fade-up">
+        <h2 id="title-clasament">Clasament Local</h2>
+        <p id="desc-clasament">Cand consideri ca ai ajuns la un scor bun salveaza-l in clasament ca sa poti compara cu scorurile obtinute de alti oameni care au jucat pe device.</p>
+      </div>
+      <div class="image" data-aos="fade-up-left">
+        <img src="./broscuta/clasament.png" alt="Adaugă Bon">
+      </div>
+    </section>
+
+    <script src="broscuta-lang.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 800,     // viteza animatiei in ms
+        once: true,        // animatia se intampla o singura data
+    });
+    </script>
+</body>
+</html>

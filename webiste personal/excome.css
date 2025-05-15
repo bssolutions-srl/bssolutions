@@ -1,0 +1,112 @@
+
+  header {
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    background-color: #222;
+    color: white;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+    cursor: pointer;
+  }
+    
+  .language-switcher {
+    display: flex;
+    gap: 20px;
+    justify-self: right;
+    margin-right: 10px;
+  }
+  
+  .language-switcher img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border 0.2s;
+  }
+  
+  .language-switcher img:hover {
+    border: 2px solid white;
+  }
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      scroll-snap-type: proximity;
+        scroll-snap-points-y: repeat(60vh);
+        scroll-snap-type: y proximity;
+    }
+    html {
+        scroll-snap-type: proximity;
+        scroll-snap-points-y: repeat(60vh);
+        scroll-snap-type: y proximity;
+        scroll-behavior: smooth;
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12vh 8%;
+      gap: 6rem;
+      scroll-snap-align:center;
+      height: 60vh;
+    }
+
+    section:nth-child(odd) {
+      flex-direction: row-reverse;
+      background-color: #ffffffd7;
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .text h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .image {
+      flex: 1;
+    }
+
+    .image img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      section:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .image, .text {
+        width: 100%;
+      }
+    }
