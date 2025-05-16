@@ -29,11 +29,16 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+  header img {
+    margin-left:10%;
+    width:10rem;
+  }
   
   header h1 {
     margin: 0;
     font-size: 24px;
   }
+
 
   nav a {
     color: white;
@@ -63,9 +68,10 @@ body {
   
   .services, .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 270px));
     gap: 20px;
     margin-top: 20px;
+    justify-content: center;
   }
   
   .card {
@@ -101,7 +107,7 @@ body {
     justify-self: right;
     margin-top: 12px;
     margin-bottom: -7px;
-    margin-right: 10px;
+    margin-right: 8%;
   }
   
   .language-switcher img {
@@ -214,6 +220,9 @@ body {
 
 #broscuta_card_spate {
   background: url("./broscuta/broscuta_matematiciana_main.png") center/cover no-repeat;
+}
+#games_card_spate {
+  background: url("./games/background-games.png") center/cover no-repeat;
 }
 
 .card_spate::before {

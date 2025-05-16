@@ -4,13 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Business Soft Solutions</title>
+  <link rel="icon" type="image/x-icon" href="./logos/logo_tastatura_mare.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="bss.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="overlay"></div>
     <header>
         <h1 id="site-title">Business Soft Solutions S.R.L.</h1>
+        <img src="./logos/fara_fundal_trimmed.png"/>
         <nav>
           <a href="#servicii" id="nav-services">Services</a>
           <a href="#despre" id="nav-about">About Me</a>
@@ -28,42 +31,42 @@
   <section id="servicii">
     <h2 id="services-title">Services</h2>
     <div class="services">
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <div class="card_title">
           <h3 id="srv1-title">Custom Websites</h3>
           <img src="icons/website.png" alt="HTML Icon" class="service_icon"/>
         </div>
         <p id="srv1-text">Responsive presentation websites built with HTML, CSS, JS.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
         <div class="card_title">
           <h3 id="srv2-title">Logo Design</h3>
           <img src="icons/design.png" alt="HTML Icon" class="service_icon"/>
         </div>
         <p id="srv2-text">Logos and icons designed for your business or website</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
         <div class="card_title">
           <h3 id="srv3-title">Automations</h3>
           <img src="icons/automate.png" alt="HTML Icon" class="service_icon"/>
         </div>
         <p id="srv3-text">Designed specifically at your request, guaranteed to get you rid of boring tasks</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
         <div class="card_title">
           <h3 id="srv4-title">Web & Mobile Apps</h3>
           <img src="icons/multiplatform.png" alt="HTML Icon" class="service_icon"/>
         </div>
         <p id="srv4-text">Develop your own idea with an app for all platforms</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
         <div class="card_title">
           <h3 id="srv5-title">Data Manipulation</h3>
           <img src="icons/db.png" alt="HTML Icon" class="service_icon" />
         </div>
-        <p id="srv5-text">Wether we're talking about Excel Files or SQL Databases, we can help you store your data</p>  
+        <p id="srv5-text">Wether we're talking about Excel Files or SQL Databases, we can help you store and process your data</p>  
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="500">
         <h3 id="srv6-title">Other Services...</h3>
         <p id="srv6-text">Algorithms, sections of your projecy you need help with and...well...just ask and we might help you</p>
       </div>
@@ -85,7 +88,7 @@
 
 
   <section id="portofoliu">
-    <h2 id="portfolio-title">Previous Projects - Click on the cards for more details</h2>
+    <h2 id="portfolio-title">Highlighted Projects - Click on the cards for more details</h2>
     <div class="projects">
       <div class="card card_portofoliu">
         <div class="portofoliu">
@@ -143,6 +146,20 @@
           </div>
         </div>
       </div>
+      <div class="card card_portofoliu">
+        <div class="portofoliu">
+          <div class="card_fata">
+            <div class="card_title">
+              <h3 id="proj5-title">Video Games</h3>
+              <img src="games/psController.png" alt="HTML Icon" class="service_icon"/>
+            </div>
+            <p id="proj5-text">Joc cu broscuta matematiciana</p>
+          </div>
+          <div class="card_spate" id="games_card_spate" onclick="window.location.href='./jocuri.html'">
+            <h1 class="find_out_more">Find out more</h1>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -150,7 +167,7 @@
     <h2 id="contact-title">Contact</h2>
     <p>Email: rares.perta02@email.com</p>
     <p>Phone: 073 069 1223</p>
-    <p>LinkedIn / GitHub: <a href="#">profile link</a></p>
+    <p>LinkedIn <a href="https://www.linkedin.com/in/rares-perta-700a911a8/" style="color:white">https://www.linkedin.com/in/rares-perta-700a911a8/</a></p>
   </section>
 
   <footer>
@@ -158,5 +175,12 @@
   </footer>
 
   <script src="lang.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,     // viteza animatiei in ms
+      once: true,        // animatia se intampla o singura data
+    });
+  </script>
 </body>
 </html>
