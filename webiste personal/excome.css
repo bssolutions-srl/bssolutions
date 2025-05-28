@@ -53,12 +53,10 @@
       background: #f5f7fa;
       color: #333;
       scroll-snap-type: proximity;
-        scroll-snap-points-y: repeat(60vh);
         scroll-snap-type: y proximity;
     }
     html {
         scroll-snap-type: proximity;
-        scroll-snap-points-y: repeat(60vh);
         scroll-snap-type: y proximity;
         scroll-behavior: smooth;
     }
@@ -101,17 +99,3 @@
       border-radius: 1rem;
     }
 
-    @media (max-width: 768px) {
-      section {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      section:nth-child(even) {
-        flex-direction: column;
-      }
-
-      .image, .text {
-        width: 100%;
-      }
-    }

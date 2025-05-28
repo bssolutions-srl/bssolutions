@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bss - Excome</title>
+  <title>Bss - Akee</title>
   <link rel="icon" type="image/x-icon" href="./logos/logo_tastatura_mare.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="excome.css" />
   <link rel="stylesheet" href="excome-mobile.css" />
+  <style>
+    section:nth-child(odd) {
+      background-color: #222;
+      color:white
+    }
+    section:nth-child(even) {
+      background-color: #333;
+      color:white
+    }
+  </style>
 </head>
 <body>
     <header>
         <h1 id="site-title" onclick="window.location.href='./bss.html'">Business Soft Solutions S.R.L.</h1>
-        <img  onclick="window.location.href='./bss.html'" src="./logos/fara_fundal_trimmed.png"/>  
+        <img src="./logos/fara_fundal_trimmed.png" onclick="window.location.href='./bss.html'"/>  
         <div class="language-switcher">
             <img src="flags/en.png" alt="English" data-lang="en" />
             <img src="flags/ro.png" alt="Română" data-lang="ro" />
@@ -22,35 +32,35 @@
       </header>
     <section>
       <div class="text" data-aos="fade-right">
-        <h2 id="title-track">Gestioneaza cheltuielile</h2>
-        <p id="desc-track">Adaugă cu ușurință veniturile și cheltuielile tale, iar aplicația le va organiza automat în funcție de lună și perioade de timp. Vizualizează totul într-o interfață clară, modernă și intuitivă, concepută pentru a te ajuta să-ți gestionezi bugetul fără efort.</p>
+        <h2 id="title-akee-main">Akee's Website</h2>
+        <p id="desc-akee-main">Adaugă cu ușurință veniturile și cheltuielile tale, iar aplicația le va organiza automat în funcție de lună și perioade de timp. Vizualizează totul într-o interfață clară, modernă și intuitivă, concepută pentru a te ajuta să-ți gestionezi bugetul fără efort.</p>
       </div>
       <div class="image" data-aos="zoom-in-left">
-        <img src="./Excome/excome_main_page.png" alt="Pagina Principală">
+        <img src="./akee/akee_principal.png" alt="Pagina Principală">
       </div>
     </section>
 
     <section>
       <div class="text" data-aos="fade-left">
-        <h2 id="title-receipt">Adaugă Bonul în Câteva Secunde</h2>
-        <p id="desc-receipt">Fă o poză bonului sau alege una din galerie, iar aplicația va recunoaște automat informațiile importante: ce ai cumparat, cantitate și pret. Toate datele sunt adăugate instant în lista ta de cheltuieli, fără să fie nevoie să completezi manual.</p>
+        <h2 id="title-spotify">Spotify Integration</h2>
+        <p id="desc-spotify">Fă o poză bonului sau alege una din galerie, iar aplicația va recunoaște automat informațiile importante: ce ai cumparat, cantitate și pret. Toate datele sunt adăugate instant în lista ta de cheltuieli, fără să fie nevoie să completezi manual.</p>
       </div>
       <div class="image" data-aos="zoom-in-right">
-        <img src="./Excome/excome_bon_adauga.png" alt="Adaugă Bon">
+        <img src="./akee/spotify.png" alt="Adaugă Bon">
       </div>
     </section>
 
     <section>
       <div class="text" data-aos="fade-up">
-        <h2 id="title-reports">Statistici Inteligente și Rapoarte Vizuale</h2>
-        <p id="desc-reports">Aplică filtre, analizează tendințele și descoperă unde se duc banii tăi. Excome clasifică automat fiecare tranzacție în categorii relevante, oferindu-ți grafice clare și rapoarte intuitive, concepute pentru decizii financiare informate.</p>
+        <h2 id="title-beats">Beatstars Integration</h2>
+        <p id="desc-beats">Aplică filtre, analizează tendințele și descoperă unde se duc banii tăi. Excome clasifică automat fiecare tranzacție în categorii relevante, oferindu-ți grafice clare și rapoarte intuitive, concepute pentru decizii financiare informate.</p>
       </div>
       <div class="image" data-aos="zoom-in-up">
-        <img src="./Excome/excome_bar_chart.png" alt="Statistici">
+        <img src="./akee/akee_beat_stars.png" alt="Statistici">
       </div>
     </section>
 <!-- AOS JS -->
-<script src="excome-lang.js"></script>
+<script src="akee-lang.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({

@@ -5,7 +5,7 @@ const translations = {
     'desc-broscuta': 'Choose a difficulty level – easy, medium, or hard – and start in the center of the matrix with your clever little frog. Your task? Jump from number to operator and back to form the correct result. Every move matters!',
     'link_broscuta':'Play now!',
 
-    'title-jucat': 'Spiel-Highlights',
+    'title-jucat': 'Gameplay Highlights',
     'desc-jucat-1': '<strong>Dynamic Matrix:</strong> Automatically generated, different every time.',
     'desc-jucat-2': '<strong>Guaranteed Path:</strong> There’s always a correct solution – can you find it?</li>',
     'desc-jucat-3': '<strong>Smart Scoring:</strong> The harder the level, the more points you earn.',
@@ -35,7 +35,7 @@ const translations = {
     'desc-broscuta': 'Wähle einen Schwierigkeitsgrad – leicht, mittel oder schwer – und starte mit deinem schlauen Fröschlein in der Mitte der Matrix. Deine Aufgabe? Springe von Zahl zu Rechenzeichen und zurück, um das richtige Ergebnis zu bilden. Jeder Sprung zählt!',
     'link_broscuta': 'Spiel mit!',
 
-    'title-jucat': 'Gameplay Highlights',
+    'title-jucat': 'Spiel-Highlights',
     'desc-jucat-1': '<strong>Dynamische Matrix:</strong> Wird automatisch generiert und ist jedes Mal anders.',
     'desc-jucat-2': '<strong>Garantierter Pfad:</strong> Es gibt immer eine richtige Lösung – kannst du sie finden?',
     'desc-jucat-3': '<strong>Intelligente Punktevergabe:</strong> Je schwerer das Level, desto mehr Punkte bekommst du.',

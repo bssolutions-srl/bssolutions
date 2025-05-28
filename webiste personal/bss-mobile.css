@@ -1,0 +1,186 @@
+@media (max-width:768px) {
+    * {
+        box-sizing: border-box;
+    }
+    header h1 {
+        display:none;
+        align-items: center;
+    }
+    .nav-links {
+    display: none;
+    top: 100%; /* just below the header */
+    left: 0;
+    width:100%;
+    background-color: #222;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1001; /* make sure it's above everything else */
+  }
+  .links {
+    display: flex;
+    top: 100%; /* just below the header */
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    flex-direction: column;
+    z-index: 1001; /* make sure it's above everything else */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display:flex;
+    font-size:2rem;
+  }
+
+  header {
+    padding:15px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width:100vw;
+  }
+
+  .header-left {
+    display: flex;
+    flex-flow:row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  header img {
+    width: 8rem;
+    margin-left:0;
+  }
+  .language-switcher {
+    display: flex;
+    gap: 15px;
+    align-self: right;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-right:0;
+  }
+
+  .language-switcher img {
+    width: 25px;
+    height: 25px;
+  }
+  section {
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+    #servicii {
+        padding-top: 70px; /* push content down so it’s visible under header */
+    }
+
+  .card {
+    height: auto;
+    padding: 16px;
+  }
+
+  .card_title {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card_title h3 {
+    font-size: 18px;
+    flex: 1;
+  }
+
+  .service_icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  #despre {
+    padding: 20px 15px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  #despre p {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  #about-list {
+    padding-left: 20px;
+  }
+
+  #about-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+   .projects {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 8px; /* less horizontal padding */
+  }
+
+  .card.card_portofoliu {
+    height: 30vh;
+    padding: 5px; /* reduced inner padding */
+  }
+
+  .card_fata,
+  .card_spate {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .card_title {
+    margin-top: 0;          /* flush to the top */
+    margin-bottom: 6px;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .card_title h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .service_icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+  }
+
+  .card_fata p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .card_spate h1.find_out_more {
+    font-size: 18px;
+    text-align: center;
+  }
+
+}

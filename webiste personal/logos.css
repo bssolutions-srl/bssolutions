@@ -94,3 +94,38 @@
 .lightbox.show img {
   transform: scale(1);
 }
+@media (max-width: 768px) {
+  .logo-description {
+    padding: 30px 15px;
+  }
+
+  .logo-description h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .logo-description p {
+    font-size: 1rem;
+    padding: 0 5px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .logos-slide img {
+    height: 120px;
+    padding:0;
+    margin:0;
+    margin:10px 10px;
+  }
+  .logos-slide {
+    display: inline-block;
+    will-change: transform;
+    transform: translateZ(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logos-slide {
+    animation: none !important;
+  }
+}

@@ -9,11 +9,12 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="logos.css" />
   <link rel="stylesheet" href="excome.css" />
+  <link rel="stylesheet" href="excome-mobile.css" />
 </head>
 <body>
     <header>
         <h1 id="site-title" onclick="window.location.href='./bss.html'">Business Soft Solutions S.R.L.</h1>
-        <img src="./logos/fara_fundal_trimmed.png"/>  
+        <img src="./logos/fara_fundal_trimmed.png" onclick="window.location.href='./bss.html'"/>  
         <div class="language-switcher">
             <img src="flags/en.png" alt="English" data-lang="en" />
             <img src="flags/ro.png" alt="Română" data-lang="ro" />
@@ -27,46 +28,54 @@
     <div class="logo-section">
         <div class="logos">
             <div class="logos-slide up">
-                    <img src="logos/c1.jpg" />
-                    <img src="logos/LOGO_TASTATURA_DEPARTE.png" />
-                    <img src="logos/c2.jpg" />
-                    <img src="logos/cu_fundal_square.png" />
-                    <img src="logos/l1.jpg" />
-                    <img src="logos/!!!LOGO_TASTATURA_APROAPE.png" />
+                    <img src="logos/c1.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/LOGO_TASTATURA_DEPARTE.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/c2.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/cu_fundal_square.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/l1.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/!!!LOGO_TASTATURA_APROAPE.png" onclick="openImage(this)" alt="..." />
             </div>
             <div class="logos-slide up">
-                    <img src="logos/c1.jpg" />
-                    <img src="logos/LOGO_TASTATURA_DEPARTE.png" />
-                    <img src="logos/c2.jpg" />
-                    <img src="logos/cu_fundal_square.png" />
-                    <img src="logos/l1.jpg" />
-                    <img src="logos/!!!LOGO_TASTATURA_APROAPE.png" />
+                    <img src="logos/c1.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/LOGO_TASTATURA_DEPARTE.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/c2.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/cu_fundal_square.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/l1.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/!!!LOGO_TASTATURA_APROAPE.png" onclick="openImage(this)" alt="..." />
+            </div>
+            <div class="logos-slide up">
+                    <img src="logos/c1.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/LOGO_TASTATURA_DEPARTE.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/c2.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/cu_fundal_square.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/l1.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/!!!LOGO_TASTATURA_APROAPE.png" onclick="openImage(this)" alt="..." />
             </div>
         </div>
         <div class="logos">
             <div class="logos-slide down">
-                    <img src="logos/c3.jpg" />
-                    <img src="logos/logo_tastatura_mare.png" />
-                    <img src="logos/l2.jpg" />
-                    <img src="logos/cu_fundal_square_cu_calculator.png" />
+                    <img src="logos/c3.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/logo_tastatura_mare.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/l2.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/cu_fundal_square_cu_calculator.png" onclick="openImage(this)" alt="..." />
             </div>
             <div class="logos-slide down">
-                    <img src="logos/c3.jpg" />
-                    <img src="logos/logo_tastatura_mare.png" />
-                    <img src="logos/l2.jpg" />
-                    <img src="logos/cu_fundal_square_cu_calculator.png" />
+                    <img src="logos/c3.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/logo_tastatura_mare.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/l2.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/cu_fundal_square_cu_calculator.png" onclick="openImage(this)" alt="..." />
             </div>
             <div class="logos-slide down">
-                    <img src="logos/c3.jpg" />
-                    <img src="logos/logo_tastatura_mare.png" />
-                    <img src="logos/l2.jpg" />
-                    <img src="logos/cu_fundal_square_cu_calculator.png" />
+                    <img src="logos/c3.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/logo_tastatura_mare.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/l2.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/cu_fundal_square_cu_calculator.png" onclick="openImage(this)" alt="..." />
             </div>
             <div class="logos-slide down">
-                    <img src="logos/c3.jpg" />
-                    <img src="logos/logo_tastatura_mare.png" />
-                    <img src="logos/l2.jpg" />
-                    <img src="logos/cu_fundal_square_cu_calculator.png" />
+                    <img src="logos/c3.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/logo_tastatura_mare.png" onclick="openImage(this)" alt="..." />
+                    <img src="logos/l2.jpg" onclick="openImage(this)" alt="..." />
+                    <img src="logos/cu_fundal_square_cu_calculator.png" onclick="openImage(this)" alt="..." />
             </div>
         </div>
     </div>
@@ -81,27 +90,39 @@
         });
     </script>
     <script>
-      var copy = document.querySelector(".logos-slide").cloneNode(true);
-      document.querySelector(".logos").appendChild(copy);
-    </script>
-    <script>
-      const lightbox = document.getElementById("lightbox");
-      const lightboxImg = document.getElementById("lightbox-img");
+      window.addEventListener("load", () => {
+  document.querySelectorAll(".logos").forEach(container => {
+    const slides = container.querySelectorAll(".logos-slide");
 
-      document.querySelectorAll(".logos-slide img").forEach(img => {
-        img.addEventListener("click", () => {
-          lightbox.classList.add("show");
-          lightboxImg.src = img.src;
-        });
-      });
+    slides.forEach(slide => {
+      const clone = slide.cloneNode(true);
+      container.appendChild(clone);
+    });
 
-      lightbox.addEventListener("click", (e) => {
-        // dacă utilizatorul a dat click în afara imaginii
-        if (e.target !== lightboxImg) {
-          lightbox.classList.remove("show");
-          lightboxImg.src = "";
-        }
-      });
+    // Forțăm reflow pentru a reporni animația
+    container.offsetHeight; // trigger reflow
+
+    container.querySelectorAll(".logos-slide").forEach(el => {
+      el.style.animation = "none";
+      el.offsetHeight; // trigger reflow again
+      el.style.animation = ""; // lasă CSS-ul să aplice animația din nou
+    });
+  });
+});
+
+function openImage(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightboxImg.src = img.src;
+    lightbox.classList.add("show");
+  }
+
+  document.getElementById("lightbox").addEventListener("click", e => {
+    if (e.target.id !== "lightbox-img") {
+      e.currentTarget.classList.remove("show");
+      document.getElementById("lightbox-img").src = "";
+    }
+  });
     </script>
     <script src="logos-lang.js"></script>
 </body>
