@@ -257,3 +257,20 @@ body {
   position: relative;
   z-index: 2;
 }
+footer {
+  position: static;
+  bottom:0;
+  width:100%;
+}
+#legal-button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+}

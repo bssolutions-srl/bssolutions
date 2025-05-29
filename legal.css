@@ -1,0 +1,149 @@
+/* Reset & Box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f4f7fa, #e1e8ed);
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    background-color: #222;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header img {
+    margin-left: -7%;
+    width:10rem;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+    cursor: pointer;
+  }
+    
+  .language-switcher {
+    display: flex;
+    gap: 20px;
+    justify-self: right;
+    margin-right: 10px;
+  }
+  
+  .language-switcher img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border 0.2s;
+  }
+  
+  .language-switcher img:hover {
+    border: 2px solid white;
+  }
+
+.language-switcher img:hover {
+    border-color: #fff;
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 60px auto 40px auto;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+}
+
+main h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ul li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+ul li strong {
+    color: #333;
+}
+
+/* Icon bullet */
+ul li::before {
+    content: "•";
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 0.9rem;
+    user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  header img {
+    width: 8rem;
+    margin-left: 0;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  .language-switcher {
+    margin: 0;
+    gap: 12px;
+  }
+  .language-switcher img {
+    width:25px;
+    height: 25px;
+  }
+}
